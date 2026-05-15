@@ -1,6 +1,14 @@
-﻿namespace ProjetoWeb1.Interfaces
+﻿using ProjetoWeb1.Models;
+
+namespace ProjetoWeb1.Interfaces
 {
     public interface IUsuarioRepositorio
     {
+        /*
+         * Interface funciona como um contrato. define o que uma classe deve fazer
+         * e quais metodos e propriedades terá, mas não diz comodeve fazer
+         */
+
+        LoginViewModel Validar(string email, string senha);
     }
 }
